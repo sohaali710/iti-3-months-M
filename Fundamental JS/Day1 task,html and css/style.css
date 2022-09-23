@@ -1,0 +1,62 @@
+body{
+    background-color: gray;
+}
+
+.parent{
+    width: 400px;
+    height: 450px;
+    background-color: rebeccapurple;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    margin: auto;
+
+    border-radius: 20px;
+
+    padding-bottom: 50px;
+}
+
+
+input,
+img .my-img,
+.btnPlus,
+.child{
+    padding: 10px 20px;
+    margin: 20px;
+    
+    border-radius: 10px;
+    border: none;
+}
+
+input{
+    width: 70%;
+}
+
+.btnPlus{
+    background-color: lightskyblue;
+    color: white;
+
+    padding: 10px 50px ;
+    border: 2px black solid;
+    border-radius: 20px;
+}
+.btnPlus:hover{
+    background-color: darkturquoise ;
+}
+
+.child{
+    width: 70%;
+    background-color: white;
+}
+
+img{
+    width: 100px;
+
+    border-radius: 20px;
+
+    margin-top: 80px;
+}
