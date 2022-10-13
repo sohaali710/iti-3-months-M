@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Movies</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <span class="logo"><a href="#">Animation Movies</a></span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="pages/movies.html">Movies</a></li>
+            <li><a href="pages/people.html">People</a></li>
+            <li><a href="pages/TVshows.html">TV shows</a></li>
+        </ul>
+        <span id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </span>
+    </nav>
+    <!-- <div class="navbar">
+        <div class="logo"><a href="#">Animation Movies</a></div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="pages/movies.html">Movies</a></li>
+                <li><a href="pages/people.html">People</a></li>
+                <li><a href="pages/TVshows.html">TV shows</a></li>
+            </ul>
+        </div>
+        <div id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div> -->
+    
+    <div class="container">
+        
+    </div>
+    
+    <script>
+        let icon = document.getElementById("icon");
+        let ul = document.querySelector("nav ul");
+        let nav = document.querySelector("nav");
+
+        console.log(nav)
+
+        let flag = 1;
+
+        icon.onclick = function(){
+            if(flag){
+                ul.classList = "show";
+                // console.log(ul)
+                flag = 0;
+            }else{
+                ul.removeAttribute("class");
+                // console.log(ul)
+                flag = 1;
+            }
+        }
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

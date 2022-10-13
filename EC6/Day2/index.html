@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent{
+            display: flex;
+            align-items: center;
+            flex-flow: column;
+
+            
+        }
+
+        .myDiv{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <canvas id="rectCanv" width="300px" height="250px" ></canvas>
+    </div>
+    
+    <hr style="margin: 30px 0;">
+
+    <div class="parent">
+        <canvas id="cirCanv" width="300px" height="300px" ></canvas>
+    </div>
+
+    <hr style="margin: 30px 0;">
+
+    <div class="parent">
+        <canvas id="sqCanv" width="300px" height="300px" ></canvas>
+    </div>
+    <hr style="margin: 30px 0;">
+
+    <div class="parent">
+        <canvas id="triCanv" width="300px" height="300px" ></canvas>
+    </div>
+
+    <script type="module" src="shapes.js"></script>
+</body>
+</html>
