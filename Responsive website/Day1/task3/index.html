@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            height: 100vh;
+
+            color: white;
+
+            letter-spacing: 1.2px;
+
+            display: flex;
+            flex-direction: column;
+
+            gap: 5px;
+        }
+        .header,
+        .footer{
+            background-color: steelblue;
+            padding: 20px;
+
+            flex-grow: 1;
+
+            /* to align the text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sub-container{
+            flex-grow: 6;
+
+            display: flex;
+            gap: 5px;
+        }
+
+        .sidenav,
+        .sidebar{
+            background-color: chocolate;
+
+            flex-grow: 1;
+
+            /* to align the text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            background-color: olivedrab;
+
+            flex-grow: 2;
+
+            /* to align the text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="sub-container">
+            <div class="sidenav">SIDENAV</div>
+            <div class="main">MAIN CONTENT</div>
+            <div class="sidebar">SIDEBAR</div>
+        </div>
+        <div class="footer">FOOTER</div>
+    </div>
+
+</body> 
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            background-color: beige;
+            height: 80vh;
+
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .navbar{
+            background-color: thistle;
+
+            padding: 12px 0;
+
+            font-size: 26px;
+
+            display: flex;
+            align-items: center;
+        }
+        .navbar ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar ul li{
+            list-style: none;
+        }
+
+        .sub-container{
+            display: flex;
+            
+            flex-grow: 1;
+        }
+        .section1,
+        .section2{
+            width: 50%;
+
+            border: 3px solid black;
+
+            margin: 10px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content{
+            padding: 20px;
+            text-align: center;
+
+            font-size: 18px;
+
+            flex-grow: 1;
+        }
+        
+        .footer{
+            background-color: thistle;
+            font-size: 20px;
+
+            text-align: center;
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="sub-container">
+            <div class="section1">
+                <div class="content">
+                    <p>This a flex item.</p>
+                </div>
+                <div class="footer">Footer</div>
+            </div>
+            <div class="section1">
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi fugit vitae maxime impedit facere error dolore aspernatur consequuntur aut, voluptates labore officia. Molestias, omnis nostrum. Similique atque enim sapiente nobis?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi fugit vitae maxime impedit facere error dolore aspernatur consequuntur aut, voluptates labore officia. Molestias, omnis nostrum. Similique atque enim sapiente nobis?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi fugit vitae maxime impedit facere error dolore aspernatur consequuntur aut, voluptates labore officia. Molestias, omnis nostrum. Similique atque enim sapiente nobis?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi fugit vitae maxime impedit facere error dolore aspernatur consequuntur aut, voluptates labore officia. Molestias, omnis nostrum. Similique atque enim sapiente nobis?
+                    </p>
+                </div>
+                <div class="footer">Footer</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

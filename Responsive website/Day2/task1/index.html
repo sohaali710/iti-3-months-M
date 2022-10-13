@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        @media (max-width:575.999999px){
+            .container{
+                height: 100vh;
+
+                color: white;
+
+                letter-spacing: 1.2px;
+
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(5,1fr);
+            }
+            .header,
+            .footer{
+                background-color: peru;
+
+                grid-column: 1/5;
+                grid-row: 1/2;
+
+                margin-bottom: 5px;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footer{
+                grid-row: 5/6;
+
+                margin-bottom: 0px;
+            }
+
+            .sidenav,
+            .sidebar{
+                background-color: skyblue;
+
+                /* grid-row: 2/6; */
+
+                grid-column: 1/5;
+                grid-row: 2/3;
+
+                margin-bottom: 5px;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .sidebar{
+                grid-row: 4/5;
+            }
+
+            .main{
+                background-color: lightcoral;
+
+                grid-column: 1/5;
+                grid-row: 3/4;
+
+                margin-bottom: 5px;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+        @media (min-width:576px) and (max-width:767.999px){
+            .container{
+                height: 100vh;
+
+                color: white;
+
+                letter-spacing: 1.2px;
+
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(6,1fr);
+            }
+
+            .header,
+            .footer{
+                background-color: gray;
+
+                grid-column: 1/5;
+                grid-row: 1/2;
+
+                margin-bottom: 5px;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footer{
+                grid-row: 6/7;
+
+                margin-bottom: 0px;
+                margin-top: 5px;
+            }
+
+            .sidenav,
+            .sidebar{
+                background-color: tan;
+
+                grid-row: 2/6;
+
+                margin-right: 5px;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .sidebar{
+                margin-right: 0px;
+                margin-left: 5px;
+            }
+
+            .main{
+                background-color: thistle;
+
+                grid-column: 2/4;
+                grid-row: 2/6;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+        @media (min-width:768px) and (max-width:991.9999px){
+            .container{
+                height: 100vh;
+
+                color: white;
+
+                letter-spacing: 1.2px;
+
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(6,1fr);
+            }
+
+            .header,
+            .footer{
+                background-color: seagreen;
+
+                grid-column: 1/5;
+                grid-row: 1/2;
+
+                margin-bottom: 5px;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footer{
+                grid-row: 6/7;
+
+                margin-bottom: 0px;
+                margin-top: 5px;
+            }
+
+            .sidenav,
+            .sidebar{
+                background-color: tan;
+
+                grid-row: 2/6;
+
+                margin-right: 5px;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .sidebar{
+                margin-right: 0px;
+                margin-left: 5px;
+            }
+
+            .main{
+                background-color: salmon;
+
+                grid-column: 2/4;
+                grid-row: 2/6;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+        }
+        @media (min-width:992px) and (max-width:1199.999px){
+            .container{
+                height: 100vh;
+
+                color: white;
+
+                letter-spacing: 1.2px;
+
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(6,1fr);
+            }
+
+            .header,
+            .footer{
+                background-color: teal;
+
+                grid-column: 1/5;
+                grid-row: 1/2;
+
+                margin-bottom: 5px;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footer{
+                grid-row: 6/7;
+
+                margin-bottom: 0px;
+                margin-top: 5px;
+            }
+
+            .sidenav,
+            .sidebar{
+                background-color: rosybrown;
+
+                grid-row: 2/6;
+
+                margin-right: 5px;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .sidebar{
+                margin-right: 0px;
+                margin-left: 5px;
+            }
+
+            .main{
+                background-color: powderblue;
+
+                grid-column: 2/4;
+                grid-row: 2/6;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            
+        }
+        @media (min-width:1200px){
+
+            .container{
+                height: 100vh;
+
+                color: white;
+
+                letter-spacing: 1.2px;
+
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(6,1fr);
+            }
+
+            .header,
+            .footer{
+                background-color: steelblue;
+
+                grid-column: 1/5;
+                grid-row: 1/2;
+
+                margin-bottom: 5px;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footer{
+                grid-row: 6/7;
+
+                margin-bottom: 0px;
+                margin-top: 5px;
+            }
+
+            .sidenav,
+            .sidebar{
+                background-color: chocolate;
+
+                grid-row: 2/6;
+
+                margin-right: 5px;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .sidebar{
+                margin-right: 0px;
+                margin-left: 5px;
+            }
+
+            .main{
+                background-color: olivedrab;
+
+                grid-column: 2/4;
+                grid-row: 2/6;
+
+                /* to align the text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="sidenav">SIDENAV</div>
+        <div class="main">MAIN CONTENT</div>
+        <div class="sidebar">SIDEBAR</div>
+        <div class="footer">FOOTER</div>
+    </div>
+
+</body> 
+</html>

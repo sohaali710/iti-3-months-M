@@ -1,0 +1,68 @@
+@import 'variables';
+
+.main{
+    &-title{
+        color: $primary-color;
+    }
+
+    &-subtitle{
+        color: $secondary-color;
+    }
+
+    &-btn{
+        background-color: $primary-color;
+    }
+    &-btn:hover{
+        background-color: $secondary-color;
+    }
+}
+
+
+$fonts: 18,16,14;
+.content{
+    @each $i in $fonts {
+        .font-#{$i}px{
+            font-size: $i *1px;
+        }
+    }
+}
+
+
+@mixin medias($numOfCols:12, $screenName: '', $breakPoint: 0px) {
+    @if ($screenName == '') {
+        @media all and (min-width: $breakPoint) {
+            @for $i from 1 through $numOfCols {
+                .col-#{$i}{
+                    width: ($i/$numOfCols) * 100%;
+                }
+                
+            }
+            
+        }
+        
+    }@else{
+        @media all and (min-width: $breakPoint) {
+            @for $i from 1 through $numOfCols {
+                .col-#{$screenName}-#{$i}{
+                    width: ($i/$numOfCols) * 100%;
+                }
+                
+            }
+            
+        }
+    }
+    
+}
+
+@include medias();
+@include medias(12,'sm' ,576px );
+@include medias(12,'md' ,768px );
+@include medias(12,'lg' ,992px );
+@include medias(12,'xl' ,1200px );
+
+.finish-btn{
+    display: block;
+    margin: auto;
+
+    margin-top: 50px;
+}
